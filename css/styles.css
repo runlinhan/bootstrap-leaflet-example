@@ -32,12 +32,13 @@ h1, h2 {
 
 
 .img {
-    border: 3px solid #ddd;
+    border: 5px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 400px;
+    width: 470px;
     height:400px;
-    position: 
+    margin:0 0 20px 0;
+  
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
