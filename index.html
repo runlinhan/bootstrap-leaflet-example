@@ -1,0 +1,130 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Runlin's NYC tour!</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+
+
+</head>
+
+<body>
+
+<nav id="custom-bootstrap-menu" class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.nycgo.com/">NYC Official Guide</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://www.opentable.com/start/home">Restaurants</a></li>
+            <li><a href="https://www.ny.com/museums/all.museums.html">Attractions</a></li>
+            <li><a href="https://www.tripadvisor.com/SmartDeals-g60763-New_York_City_New_York-Hotel-Deals.html">Hotels</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="http://www.booking.com/">Booking</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>Travel in NYC! </h1>
+    <p>An online NYC tour map from Runlin!</p>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">Explore more »</a></p>
+  </div>
+</div>
+
+<div class="container">
+
+      <hr>
+
+      <footer>
+        <p>© 2017 Runlin Han.</p>
+      </footer>
+    </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="custom-h2">Explore the NYC!</h2>
+      <button type="button" class="btn btn-danger reset">Reset Map</button>
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-4">
+          <button type="button" class="btn btn-primary favorite-restaurant"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Favorite Restaurant</button>
+        </div>
+        <div class="col-md-4">
+          <button type="button" class="btn btn-primary favorite-attraction"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Favorite Attraction </button>
+        </div>
+        <div class="col-md-4">
+          <button type="button" class="btn btn-primary favorite-hotel"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Favorite Hotel </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="mapContainer">
+  </div>
+
+<div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Restaurants</h2>
+          <p>Your eating choices in New York City are as limitless as your cravings. Want a 15-course tasting menu at the latest trendsetting restaurant? A porterhouse for two at an old-timey steakhouse? A plateful of Chinese dumplings? The City has thousands of places featuring cuisines from around the world. Explore this section to find the restaurants—and meals—of your dreams. </p>
+          <p><a class="btn btn-default" href="http://www.nycgo.com/things-to-do/restaurants-dining" role="button">More »</a></p>
+        </div>
+        
+        <div class="col-md-4">
+          <h2>Attractions</h2>
+          <p>Breathtaking views from Top of the Rock, the Empire State Building and One World Observatory. Exhibits from throughout history at the Metropolitan Museum of Art, the Brooklyn Museum and New York Hall of Science. Thrilling performances at Lincoln Center, BAM and Barclays Center. Attractions in NYC suit all tastes. </p>
+          <p><a class="btn btn-default" href="http://www.nycgo.com/things-to-do/attractions" role="button">More »</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Hotels</h2>
+          <p>New York City offers a wide range of accommodations to fit every taste: marquee hotels that reflect NYC’s bright lights, boutique hotels tucked away on charming side streets, family-friendly stays close to parks and greenery. Whether you’re looking to visit nearby attractions, explore NYC history or be in the center of it all, these hotels will make New York City your home away from home. </p>
+          <p><a class="btn btn-default" href="http://www.nycgo.com/plan-your-trip/hotels" role="button">More »</a></p>
+        </div>
+      </div>
+  </div>
+
+</div>
+
+  <img class="img" src="https://static01.nyt.com/images/2013/09/11/dining/11REST_SPAN/11REST_SPAN-videoLarge.jpg">
+  <img class="img" src="http://az616578.vo.msecnd.net/files/2015/06/02/6356884908350255571042721344_2-nyc-empire-nina-papiorek.jpg">
+  <img class="img" src="https://media-cdn.tripadvisor.com/media/photo-s/0d/e1/39/b0/hotel-exterior.jpg">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
